@@ -1,0 +1,223 @@
+/* styles.css */
+/* ページ全体の設定 */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* メインコンテンツのスタイル */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FCF1DC;
+    color: #5E79A1;
+}
+
+/* コンテンツ部分 */
+main {
+    flex: 1; /* メインコンテンツがフッター以外のスペースを占めるように */
+    padding: 20px;
+}
+
+/* フッターのスタイル */
+footer {
+    background-color: #5E79A1;
+    padding: 10px 0;
+    text-align: center;
+    color: #FCF1DC;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FCF1DC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+/* キャラクター画像のスタイルを強制適用 */
+.gallery img {
+    width: 270px ; /* 幅を明示的に指定 */
+    height: auto ; /* 高さを自動調整 */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.popup img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 5px;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.close, .prev, .next {
+    background: none;
+    border: none;
+    color: #FCF1DC;
+    font-size: 2em;
+    position: absolute;
+    cursor: pointer;
+}
+
+.close {
+    top: 10px;
+    right: 20px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* 刀とキャラクター間にスペースを追加 */
+}
+
+.item {
+    width: 48%; /* 各アイテムの幅を指定、残りのスペースに合わせて調整 */
+    border: 2px solid #5E79A1; /* 枠線を追加 */
+    border-radius: 10px; /* 枠線の角を丸める */
+    padding: 20px;
+    background-color: #FCF1DC; /* 背景色を追加 */
+}
+
+h3 {
+    margin-top: 0; /* タイトルの上部の余白を削除 */
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* 刀の画像スタイル */
+.knife-image {
+    text-align: center; /* 画像を中央に配置 */
+    margin-bottom: 15px; /* 画像とテキストの間にスペース */
+}
+
+.knife-img {
+    max-width: 100%; /* 画像の幅を親要素に合わせる */
+    height: auto; /* 画像の縦横比を保ったまま表示 */
+    border-radius: 10px; /* 画像の角を丸める */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 画像に影を追加 */
+}
+
+/* キャラクター説明のスタイル */
+.item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #5E79A1; /* 説明文の色 */
+    margin-top: 10px; /* 画像との間にスペース */
+}
+
+/* 画像と説明のレイアウト調整 */
+.item {
+    margin-bottom: 20px;
+}
+
+.item h3 {
+    font-size: 1.2rem;
+    color: #5E79A1;
+    margin-bottom: 8px;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+/* ゲーム紹介セクションのスタイル */
+#game {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #F3F7FA; /* セクションの背景色 */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#game h2 {
+    font-size: 1.8rem;
+    color: #5E79A1;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.game-content {
+    display: flex;
+    justify-content: center;
+}
+
+.game-info {
+    flex: 1 1 80%;
+    min-width: 300px;
+}
+
+.game-info h3 {
+    font-size: 1.4rem;
+    color: #5E79A1;
+    margin-bottom: 10px;
+}
+
+.game-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
