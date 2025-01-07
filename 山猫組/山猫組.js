@@ -4,16 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const nansenImages = [
         { src: '南泉.png', alt: '南泉1' },
         { src: '南泉全身.png', alt: '南泉2' },
-        { src: '山猫組/images/南泉3.jpg', alt: '南泉3' },
-        { src: '山猫組/images/南泉3.jpg', alt: '南泉3' },
+        { src: '南泉内番.png', alt: '南泉内番' },
+        { src: '南泉軽装.png', alt: '南泉軽装' },
     ];
 
     // 長義画像リスト
     const chougiImages = [
         { src: '長義.png', alt: '長義1' },
         { src: '長義全身.png', alt: '長義2' },
-        { src: '山猫組/images/長義3.jpg', alt: '長義3' },
-        { src: '山猫組/images/南泉3.jpg', alt: '南泉3' },
+        { src: '長義内番.png', alt: '長義内番' },
+        { src: '長義軽装.png', alt: '長義軽装' },
     ];
 
     // 各ポップアップ関連
